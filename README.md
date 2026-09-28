@@ -27,3 +27,21 @@ Fitness Tracker Pseudocode and Flowchart and IPO Chart
 
 ---
 
+## 3. Pseudocode
+
+```
+MODULE Main()
+    DECLARE Integer total_cardio = 0
+    DECLARE Integer total_strength = 0
+    DECLARE Integer total_active = 0
+    DECLARE String main_choice = ""  
+    DECLARE String sub_choice = ""
+    DECLARE Real duration = 0.0  
+    DECLARE String activity_name = ""
+
+
+```
+
+    
+
+    
