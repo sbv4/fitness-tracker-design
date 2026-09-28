@@ -4,7 +4,7 @@ Fitness Tracker Pseudocode and Flowchart and IPO Chart
 # Software Design: Campus Fitness & Activity Tracker
 
 **Course:** Software Design & Logic  
-**Author:** [Student Name]  
+**Author:** ITP 150 Student  
 **Deliverable:** Algorithm Design (IPO, Flowchart, Pseudocode)  
 
 ---
