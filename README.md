@@ -120,6 +120,29 @@ MODULE Main()
             total_strength = total_strength + duration
             DISPLAY "Successfully added ", duration, "minutes for ", activity_name, "."
 
+       ELSE IF main_choice == 3 THEN
+           total_active = total_cardio + total_strength
+           DISPLAY "=========================================="
+           DISPLAY "          ACTIVITY SUMMARY                "           
+           DISPLAY "=========================================="
+           DISPLAY "Total Cardio:", total_cardio  
+           DISPLAY "Total Strength:", total_strength
+           DISPLAY "Total Active:", total_active
+
+           IF total_active >= 120 THEN
+               DISPLAY "Status: Goal achieved! You exceeded 120 weekly active minutes."
+           ELSE IF total_active > 0 THEN
+               DISPLAY "Status: Keep Going! ", (120 - total_active), " more minutes needed to hit"
+               DISPLAY "your weekly target."
+           ELSE
+               DISPLAY "Status: No workouts logged yet."
+           END IF
+           DISPLY "=========================================="
+
+
+
+
+
 ```
 
     
