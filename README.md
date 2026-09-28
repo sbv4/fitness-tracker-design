@@ -80,8 +80,45 @@ MODULE Main()
                 activity_name = "Swimming"
             END IF
 
+            DISPLAY "Enter duration in minutes:"
+            INPUT duration
+            WHILE duration < 0
+                DISPLAY "Invalid. Please enter minutes >= 0:"
+                INPUT duration
+            END WHILE
 
+            total_cardio = total_cardio + duration
+            DISPLAY "Successfully added ", duration, "minutes for ", activity_name, "."
 
+        ELSE IF main_choice == 2 THEN
+            DISPLAY "--- STRENGTH MENU ---"
+            DISPLAY "1. Upper Body"
+            DISPLAY "2. Lower Body"
+            DISPLAY "3. Core & Flexibility"
+            DISPLAY "Enter strength category (1-3):"
+
+            WHILE sub_choice != 1 AND sub_choice != 2 AND sub_choice !=3
+                DISPLAY "Invalid. Please enter 1, 2, or 3. Try Again!"
+                INPUT sub_choice
+            END WHILE
+
+            IF sub_choice == 1 THEN
+                activity_name = "Upper Body"
+            ELSE IF sub_choice == 2 THEN
+                activity_name = "Lower Body"
+            ELSE
+                activity_name = "Core & Flexibility"
+            END IF
+
+            DISPLAY "Enter duration in minutes:"
+            INPUT duration
+            WHILE duration < 0
+                DISPLAY "Invalid. Please enter minutes >= 0:"
+                INPUT duration
+            END WHILE
+
+            total_strength = total_strength + duration
+            DISPLAY "Successfully added ", duration, "minutes for ", activity_name, "."
 
 ```
 
